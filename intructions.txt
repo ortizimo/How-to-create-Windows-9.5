@@ -7,27 +7,27 @@ Date: 20190113
 
 DISCLAIMER:
 -----------------------------------------
-I am not responsible for any issues and/or damages to your system to include but not limited to corruption or loss of data by 
-using this guide. I have tested these steps myself and found no issues or damage to my own system. It is recommended that you 
-use a separate hard drive to prevent any issues or loss of data. Additionally, I am not responsible for any software links, 
+I am not responsible for any issues and/or damages to your system to include but not limited to corruption or loss of data by
+using this guide. I have tested these steps myself and found no issues or damage to my own system. It is recommended that you
+use a separate hard drive to prevent any issues or loss of data. Additionally, I am not responsible for any software links,
 software availability or condition that is mentioned in this guide.
 
 INTRODUCTION:
 -----------------------------------------
-Windows 9 doesn’t exist…or does it? Well it does, but only as an unofficial custom embedded OS for new ATMs, Digital Signage 
-systems and Point-of-Sales systems just like the old Windows RT was. Windows 9 is actually a Windows 8.1 Industry Pro version, 
-but without all the tracking and telemetry, and other useless services. It also has a ton of tweaks to make it look and feel like 
-Windows 7 for those industries and users. 
+Windows 9 doesn’t exist…or does it? Well it does, but only as an unofficial custom embedded OS for new ATMs, Digital Signage
+systems and Point-of-Sales systems just like the old Windows RT was. Windows 9 is actually a Windows 8.1 Industry Pro version,
+but without all the tracking and telemetry, and other useless services. It also has a ton of tweaks to make it look and feel like
+Windows 7 for those industries and users.
 
-None of us regular mortals will ever see this cool and light-weight OS for home use, but you can make one using you own Windows 8.1 
+None of us regular mortals will ever see this cool and light-weight OS for home use, but you can make one using you own Windows 8.1
 or even Windows 10 copy. Today I will walk you on how to create your own Windows 9…err Windows 9.5 copy.
 
-For it, I’ll be using Windows 8.1 Pro N to create the Windows 9.5 version. Pro N basically comes without Windows Media Player and 
-related technologies installed. Why 9.5? Glad you asked. The differences between the real 9 and our 9.5 version are significant for 
-our purposes, for starters, you cannot truly game on the actual Windows 9. This version is streamed-line for industry operations so 
-why have support for gaming in it right?! But the most important reason is that Windows 9 works on specific hardware and you cannot 
-just buy any motherboard or video card and expect it to work like it should. Building it using Windows 8.1 will be the best choice 
-because we’ll still have native support for USB 3.0, DirectX12 support, better memory management, DISM Recovery Tools, Secure-boot, 
+For it, I’ll be using Windows 8.1 Pro N to create the Windows 9.5 version. Pro N basically comes without Windows Media Player and
+related technologies installed. Why 9.5? Glad you asked. The differences between the real 9 and our 9.5 version are significant for
+our purposes, for starters, you cannot truly game on the actual Windows 9. This version is streamed-line for industry operations so
+why have support for gaming in it right?! But the most important reason is that Windows 9 works on specific hardware and you cannot
+just buy any motherboard or video card and expect it to work like it should. Building it using Windows 8.1 will be the best choice
+because we’ll still have native support for USB 3.0, DirectX12 support, better memory management, DISM Recovery Tools, Secure-boot,
 SMB3.0, New File-copy dialog, and as already stated, support for out-of-the-shelf motherboards and other hardware.
 
 -------------------------------------------------------------------------------------------------------------------------------
@@ -36,7 +36,7 @@ Note: You can do these steps using a blank HDD or using a VM, and then later you
 
 SOFTWARE REQUIRED:
 -----------------------------------------
-• A copy of Windows 8.1 
+• A copy of Windows 8.1 Pro or Pro N
 	o updated to the latest patch (optional)
 • Oracle Virtualbox 5.0 or above or VMware Workstation 12 or above
 	o 8GB ram or better
@@ -77,8 +77,8 @@ STEP #2: STREAMLINING
 -----------------------------------------
 1. Go to Control Panel and change the view to “Large Icons”
 
-2. (Optional) I recommend having all the latest security patches and updates available for our Windows 9.5 project, then, coming 
-in and start disabling what we don’t need, but if you don’t have a more-than-legit copy of Windows and you don’t want to update it 
+2. (Optional) I recommend having all the latest security patches and updates available for our Windows 9.5 project, then, coming
+in and start disabling what we don’t need, but if you don’t have a more-than-legit copy of Windows and you don’t want to update it
 then do the optional steps below. This will mean that any updates required for gaming will need to be downloaded and installed manually.
 
 3. (Optional) Go to Control Panel > Windows Update > Change Settings
@@ -90,11 +90,11 @@ then do the optional steps below. This will mean that any updates required for g
 a.	Select “Change Action Center settings”
 b.	Go to Problem reporting settings and select “Never check for solutions”
 c.	(Optional) While you’re there click on Change report settings and select “Never check for solutions”
-d.	Go to Customer Experience Improvement Program setting and select “No, I don’t want to participate in the program”…this may already 
+d.	Go to Customer Experience Improvement Program setting and select “No, I don’t want to participate in the program”…this may already
 	be grayed out
 e.	Now Uncheck which messages to turn off then click OK
-f.	If you want to raise the warning when any software tries to installs itself and make changes to your computer then raise the bar 
-	here then click OK 
+f.	If you want to raise the warning when any software tries to installs itself and make changes to your computer then raise the bar
+	here then click OK
 g.	Go to Change Windows SmartScreen and set it to “Get admin approval”
 h.	Click OK
 
@@ -134,7 +134,7 @@ While in Control Panel:
 
 5. Click OK
 
-Google for any other services you don’t understand. Also if you have trouble updating Windows then enable all these services, 
+Google for any other services you don’t understand. Also if you have trouble updating Windows then enable all these services,
 try updating again and see if you got any new services you may want to stop.
 -------------------------------------------------------------------------------------------------------------------------------
 
@@ -142,7 +142,7 @@ try updating again and see if you got any new services you may want to stop.
 	a. Click on Advance
 	b. Uncheck “Allow this computer to be controlled remotely” and click OK
 	c. Uncheck “Allow Remote Assistance” and click Apply
- 
+
 
 STEP #4: PRIVACY
 -----------------------------------------
@@ -196,36 +196,35 @@ Note: 	*You may have issues when trying to Benchmark Windows 9
 
 There are some services that cannot be disabled through services so you’ll need to remove specific updates if you have them:
 1.	Go to Control Panel > Windows Update > Installed Updates and uninstall the following:
-	a. KB3065988 Windows Update Client for Windows 8.1 and Windows Server 2012 
-	b. KB3083325 Windows Update Client for Windows 8.1 and Windows Server 2012 
-	c. KB3083324 Windows Update Client for Windows 7 and Windows Server 2008 
-	d. KB2976978 Compatibility update for Windows 8.1 and Windows 8 
-	e. KB3075853 Windows Update Client for Windows 8.1 and Windows Server 2012 
-	f. KB3065987 Windows Update Client for Windows 7 and Windows Server 2008 
+	a. KB3065988 Windows Update Client for Windows 8.1 and Windows Server 2012
+	b. KB3083325 Windows Update Client for Windows 8.1 and Windows Server 2012
+	c. KB3083324 Windows Update Client for Windows 7 and Windows Server 2008
+	d. KB2976978 Compatibility update for Windows 8.1 and Windows 8
+	e. KB3075853 Windows Update Client for Windows 8.1 and Windows Server 2012
+	f. KB3065987 Windows Update Client for Windows 7 and Windows Server 2008
 	g. KB3050265 Windows Update Client for Windows 7
 	h. KB3050267 Windows Update Client for Windows 8.1
-	i. KB3075851 Windows Update Client for Windows 7 and Windows Server 2008 KB2902907 MS Security Essentials/Windows Defender related update 
-	j. KB3068708 Update for customer experience and diagnostic telemetry 
-	k. KB3022345 Update for customer experience and diagnostic telemetry 
-	l. KB2952664 Compatibility update for upgrading Windows 7 
+	i. KB3075851 Windows Update Client for Windows 7 and Windows Server 2008 KB2902907 MS Security Essentials/Windows Defender related update
+	j. KB3068708 Update for customer experience and diagnostic telemetry
+	k. KB3022345 Update for customer experience and diagnostic telemetry
+	l. KB2952664 Compatibility update for upgrading Windows 7
 	m. KB2990214 Update that enables you to upgrade from Windows 7 to a later version
-	n. KB3035583 Update installs Get Windows 10 app in Windows 8.1 and Windows 7 SP1 
-	o. KB971033 Description of the update for Windows Activation Technologies 
-	p. KB3021917 Update to Windows 7 SP1 for performance improvements 
-	q. KB3044374 Update that enables you to upgrade from Windows 8.1 to a later version of Windows 
-	r. KB3046480 Update helps to determine whether to migrate the .NET Framework 1.1 when you upgrade Windows 8.1 or Windows 7 
-	s. KB3075249 Update that adds telemetry points to consent.exe in Windows 8.1 and Windows 7 
-	t. KB3080149 Update for customer experience and diagnostic telemetry 
-	u. KB3083324 Windows Update Client for Windows 7 and Windows Server 2008 R2: September 2015 
-	v. KB3083325 Windows Update Client for Windows 8.1 and Windows Server 2012 R2: September 2015 
-	w. KB3083710 Windows Update Client for Windows 7 and Windows Server 2008 R2: October 2015 
-	x. KB3083711 Windows Update Client for Windows 8.1 and Windows Server 2012 R2: October 2015 
-	y. KB3112336 Windows Update Client for Windows 8.1 and Windows Server 2012 R2: December 2015 
+	n. KB3035583 Update installs Get Windows 10 app in Windows 8.1 and Windows 7 SP1
+	o. KB971033 Description of the update for Windows Activation Technologies
+	p. KB3021917 Update to Windows 7 SP1 for performance improvements
+	q. KB3044374 Update that enables you to upgrade from Windows 8.1 to a later version of Windows
+	r. KB3046480 Update helps to determine whether to migrate the .NET Framework 1.1 when you upgrade Windows 8.1 or Windows 7
+	s. KB3075249 Update that adds telemetry points to consent.exe in Windows 8.1 and Windows 7
+	t. KB3080149 Update for customer experience and diagnostic telemetry
+	u. KB3083324 Windows Update Client for Windows 7 and Windows Server 2008 R2: September 2015
+	v. KB3083325 Windows Update Client for Windows 8.1 and Windows Server 2012 R2: September 2015
+	w. KB3083710 Windows Update Client for Windows 7 and Windows Server 2008 R2: October 2015
+	x. KB3083711 Windows Update Client for Windows 8.1 and Windows Server 2012 R2: October 2015
+	y. KB3112336 Windows Update Client for Windows 8.1 and Windows Server 2012 R2: December 2015
 	z. KB3123862 Updated capabilities to upgrade Windows 8.1 and Windows 7
 
-
 -------------------------------------------------------------------------------------------------------------------------------
-Note: Before uninstalling these make sure you have set everything to not to automatically install updates if you do not want to 
+Note: Before uninstalling these make sure you have set everything to not to automatically install updates if you do not want to
 update the OS, and disconnect either the cat cable or disable the Adapter Setting in Control Panel > Network and Internet > Network Connections.
 -------------------------------------------------------------------------------------------------------------------------------
 
@@ -242,6 +241,7 @@ update the OS, and disconnect either the cat cable or disable the Adapter Settin
 Warning! You have to be absolutely careful about deleting registry keys. One false move and you’ll end up with a bricked system
 …software wise not hardware. So do these very, very carefully. Some keys will not be deleted!
 -------------------------------------------------------------------------------------------------------------------------------
+
 5. Now search for and run regedit
 
 6. Go to Edit > Find
@@ -259,9 +259,9 @@ STEP #5: CUSTOMIZATION
 -----------------------------------------
 Download and install the following:
 • Download the Aero Glass for Win8.1+ 1.4.6 file
-	o http://www.glass8.eu/download 
+	o http://www.glass8.eu/download
 
-• Right click and save the "Win7 Taskbar Reflection for opacity 40 qty .png" attachment, then go to ClassicShell > Taskbar > Texture > … 
+• Right click and save the "Win7 Taskbar Reflection for opacity 40 qty .png" attachment, then go to ClassicShell > Taskbar > Texture > …
 and browse for the .png file
 	o http://www.classicshell.net/forum/viewtopic.php?f=21&t=6089&hilit=windows+7+taskbar+texture&start=50#p27834
 
@@ -269,7 +269,7 @@ and browse for the .png file
 On the forum, look for the Attachment: and under it right-click and save the glass looking graphic
 -------------------------------------------------------------------------------------------------------------------------------
 
-• Win7 Start Button and save the "Windows 7.png" attachment,  go to ClassicShell > Start Menu Style tab and add it, then go to the Start 
+• Win7 Start Button and save the "Windows 7.png" attachment,  go to ClassicShell > Start Menu Style tab and add it, then go to the Start
 Button tab and change the Button size to 65
 	o http://www.classicshell.net/forum/viewtopic.php?f=18&t=3207
 
@@ -277,9 +277,9 @@ Other Customization Settings:
 -----------------------------------------
 • Skins: www.classicshell.net/forum/viewtopic.php?f=17&t=5824
 • Taskbar:
-	o Taskbar Look: Opaque 
-	o Taskbar Opacity: 40 
-	o Taskbar Texture: Choose file - Win7 Taskbar Reflection for opacity 40 qty .png 
+	o Taskbar Look: Opaque
+	o Taskbar Opacity: 40
+	o Taskbar Texture: Choose file - Win7 Taskbar Reflection for opacity 40 qty .png
 
 • Main Menu Look:
-	o Glass Opacity: 10 
+	o Glass Opacity: 10
