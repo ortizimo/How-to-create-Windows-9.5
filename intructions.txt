@@ -10,7 +10,7 @@ DISCLAIMER:
 I am not responsible for any issues and/or damages to your system to include but not limited to corruption or loss of data by
 using this guide. I have tested these steps myself and found no issues or damage to my own system. It is recommended that you
 use a separate hard drive to prevent any issues or loss of data. Additionally, I am not responsible for any software links,
-software availability or condition that is mentioned in this guide.
+software availability or condition on software that is mentioned in my guide.
 
 INTRODUCTION:
 -----------------------------------------
